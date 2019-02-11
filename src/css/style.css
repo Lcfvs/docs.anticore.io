@@ -1,9 +1,10 @@
 /* ========================================================================================================
-# code from LCVS, initiate the style
+# code from Lcf.vs, initiate the style
 ==========================================================================================================*/
+
 body {
   /*fatCat*/
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: rgba(245, 245, 255, 1);
 }
 
@@ -72,6 +73,9 @@ body > main > p {
 /* ========================================================================================================
 # code from fatCat, initiate the style
 ==========================================================================================================*/
+body > header {
+  margin-bottom: none;
+}
 
 body > header > h1,
 body > header > nav {
@@ -117,19 +121,15 @@ body > header > nav > ol > li > a:hover {
   margin-left: -1%;
 }
 
-body > header > nav > a[role="button"] {
+body > header > nav > a[role='button'] {
   display: none;
 }
 
-/*============================== First section img presentatio ========================*/
-
-body > main {
-  margin-top: -100px;
-}
+/*============================== First section img presentation ========================*/
 
 body > main > section {
-  background-image: url("./src/img/home/basic-js.png");
-  background-size: cover;
+  background-image: url('/src/img/home/basic-js.png');
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 500px;
+  min-height: 500px;
 }
