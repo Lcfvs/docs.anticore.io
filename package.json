@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@lcf.vs/css-ui": "2.4.3",
-    "anticore": "2.24.4"
+    "anticore": "2.24.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
