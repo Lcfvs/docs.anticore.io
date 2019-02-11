@@ -1,0 +1,135 @@
+/* ========================================================================================================
+# code from LCVS, initiate the style
+==========================================================================================================*/
+body {
+  /*fatCat*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgba(245, 245, 255, 1);
+}
+
+body > header {
+  box-sizing: content-box;
+  /*fatCat*/
+  min-height: 80px;
+}
+
+body > header,
+body > nav > a,
+body > nav > ol:first-of-type {
+  background: rgba(0, 0, 34, 1);
+}
+
+body > header > ol > li > a,
+body > nav > a {
+  color: rgba(245, 245, 255, 0.7);
+}
+
+body > header > ol > li > a:not(:focus) ~ a {
+  color: transparent;
+}
+
+body > header > ol > li > a + ol,
+body > header > ol > li > a ~ p {
+  background: rgba(255, 255, 181, 1);
+}
+
+body > header > ol > li > ol > li > a {
+  display: block;
+  height: 100%;
+  padding: 0 0.5em;
+}
+
+body > header > ol > li > a:not(:focus) + ol:not(:empty) ~ a::after {
+  background: rgba(255, 0, 0, 0.8);
+}
+
+body > header,
+body > nav > ol:first-of-type > li {
+  border-bottom: 0.063em solid rgba(255, 255, 255, 0.3);
+}
+
+body > nav {
+  margin-top: 3.063em;
+}
+
+body > nav > ol:first-of-type a {
+  color: rgba(204, 204, 255, 1);
+}
+
+body > nav > ol:first-of-type a.current {
+  color: rgba(91, 192, 190, 1);
+}
+
+body > main > h1 {
+  font-size: 2em;
+}
+
+body > main > h1,
+body > main > p {
+  text-align: center;
+}
+
+/* ========================================================================================================
+# code from fatCat, initiate the style
+==========================================================================================================*/
+
+body > header > h1,
+body > header > nav {
+  color: #faa61a;
+}
+
+body > header > h1 {
+  margin-top: 18px;
+}
+
+body > header > h1 > a {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+body > header > nav {
+  margin-left: 60%;
+  margin-top: 35px;
+}
+
+body > header > nav > ol > li {
+  display: inline;
+  margin-left: 5%;
+}
+
+body > header > h1 a:hover,
+body > header > nav > ol > li > a:hover {
+  transition: border, 1s;
+}
+
+body > header > h1 > a:hover {
+  color: white;
+  border: 1px dashed white;
+  margin-top: 22px;
+  padding: 5px;
+}
+
+body > header > nav > ol > li > a:hover {
+  color: white;
+  border: 1px dashed white;
+  padding: 7.5px;
+  margin-left: -1%;
+}
+
+body > header > nav > a[role="button"] {
+  display: none;
+}
+
+/*============================== First section img presentatio ========================*/
+
+body > main {
+  margin-top: -100px;
+}
+
+body > main > section {
+  background-image: url("./src/img/home/basic-js.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}

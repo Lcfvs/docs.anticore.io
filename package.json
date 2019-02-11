@@ -8,10 +8,13 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "@lcf.vs/css-ui": "2.4.3",
     "anticore": "2.24.2"
   },
   "devDependencies": {
-    "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1"
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "parcel-bundler": "^1.11.0"
   }
 }
