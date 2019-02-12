@@ -74,12 +74,12 @@ body > main > p {
 # code from fatCat, initiate the style
 ==========================================================================================================*/
 body > header {
-  margin-bottom: none;
+  border-bottom: 10px solid rgba(250, 166, 26, 1);
 }
 
 body > header > h1,
 body > header > nav {
-  color: #faa61a;
+  color: rgba(250, 166, 26, 1);
 }
 
 body > header > h1 {
@@ -108,15 +108,15 @@ body > header > nav > ol > li > a:hover {
 }
 
 body > header > h1 > a:hover {
-  color: white;
-  border: 1px dashed white;
+  color: rgba(255, 255, 255, 1);
+  border: 1px dashed rgba(255, 255, 255, 1);
   margin-top: 22px;
   padding: 5px;
 }
 
 body > header > nav > ol > li > a:hover {
-  color: white;
-  border: 1px dashed white;
+  color: rgba(255, 255, 255, 1);
+  border: 1px dashed rgba(255, 255, 255, 1);
   padding: 7.5px;
   margin-left: -1%;
 }
