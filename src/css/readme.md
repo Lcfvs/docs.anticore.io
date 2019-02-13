@@ -2,7 +2,7 @@
 
 ## Units
 
-- Use only `vh`, `vw`, `em` or `%` (as last fallback)
+- Use only `vh`, `vw`, `em`, `rem` or `%` (as last fallback)
 
 ## Colors
 
