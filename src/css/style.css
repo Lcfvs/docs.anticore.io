@@ -5,6 +5,7 @@
 body {
   /*fatCat*/
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 34, 1);
   background: rgba(245, 245, 255, 1);
 }
 
@@ -71,8 +72,11 @@ body > main > p {
 }
 
 /* ========================================================================================================
-# code from fatCat, initiate the style
+# code from fatCat, initiate the global style for header and footer
 ==========================================================================================================*/
+
+/*============================================ Header ==================================================*/
+
 body > header {
   border-bottom: 10px solid rgba(250, 166, 26, 1);
 }
@@ -83,7 +87,7 @@ body > header > nav {
 }
 
 body > header > h1 {
-  margin-top: 18px;
+  margin-top: 1.2em;
 }
 
 body > header > h1 > a {
@@ -94,7 +98,7 @@ body > header > h1 > a {
 
 body > header > nav {
   margin-left: 60%;
-  margin-top: 35px;
+  margin-top: 2.3em;
 }
 
 body > header > nav > ol > li {
@@ -102,22 +106,17 @@ body > header > nav > ol > li {
   margin-left: 5%;
 }
 
-body > header > h1 a:hover,
-body > header > nav > ol > li > a:hover {
-  transition: border 1s;
-}
-
 body > header > h1 > a:hover {
   color: rgba(255, 255, 255, 1);
   border: 1px dashed rgba(255, 255, 255, 1);
-  margin-top: 22px;
-  padding: 5px;
+  padding: 0.3em;
+  margin-left: -1%;
 }
 
 body > header > nav > ol > li > a:hover {
   color: rgba(255, 255, 255, 1);
   border: 1px dashed rgba(255, 255, 255, 1);
-  padding: 7.5px;
+  padding: 0.5em;
   margin-left: -1%;
 }
 
@@ -125,15 +124,139 @@ body > header > nav > a[role='button'] {
   display: none;
 }
 
-/*============================== First section img presentation ========================*/
+/*============================================ Footer ==================================================*/
+
+body > footer {
+  background-color: rgba(7, 17, 54,1);
+  height: 10em;
+  width: 100%;
+}
+
+/* ========================================================================================================
+# code from fatCat, style for home page
+==========================================================================================================*/
+
+/*============================== First section home page presentation ========================*/
+
+@media only screen and (min-width: 50em) {
+  body {
+      width: calc(0vh -0em);
+      margin-left: 0;
+      margin-top: 2.5em;
+  }
+}
+
+body > main.home {
+  height: calc(0vh - 0em);
+  padding: 0;
+}
+
+body > main.home > * {
+  margin: 0;
+  padding: 0;
+  width: 110%;
+}
 
 body > main.home > header h1,
+body > main.home > header h2,
 body > main.home > header p {
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+body > main.home > header h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+body > main.home > header h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+body > main.home > header {
+  background-color: rgba(92, 45, 145, 1);
+}
+
+body > main.home > header > div {
+  width: 50%;
+  height: 20em;
+  margin-top: -25em;
+  margin-left: 30%;
   position: absolute;
-  color: red;
-  z-index: 2;
+  z-index: 0;
 }
 
 body > main.home > header img {
   position: relative;
+  opacity: 0.5;
+  width: 110%;
+}
+
+/*============================== Second section Anticore features ==============================*/
+
+body > main.home > section {
+  width: 80%;
+}
+
+body > main.home > section {
+  margin-top: 10em;
+}
+
+body > main.home > section > figure {
+  margin-bottom: 12.5em;
+  padding: 5em;
+}
+
+body > main.home > section > figure > span {
+  background-color: rgba(250, 166, 26, 1);
+  border: 1px solid rgba(250, 166, 26, 1);
+  padding: 10em;
+  border-radius: 50%;
+} 
+
+body > main.home > section > figure > span:hover {
+  background-color: rgba(7, 17, 54,1);
+  border: 2px dashed rgba(250, 166, 26, 1);
+  transition: border 1s, background-color 1s;
+}
+
+body > main.home > section > figure > span:hover ~ ul > li > h3 {
+  text-decoration: underline;
+  text-decoration-style:dashed;
+  text-decoration-color: rgba(250, 166, 26, 1);
+}
+
+body > main.home > section > figure:nth-child(odd) > span {
+  margin-top: -8em;
+  position: absolute;
+  right: 0;
+}
+
+body > main.home > section > figure:nth-child(even) > span {
+  margin-top: -8em;
+  position: absolute;
+  left: 8%;
+}
+
+body > main.home > section > figure:nth-child(odd) > ul {
+  margin-top: -2.5em;
+  position: absolute;
+  left: 17%;
+}
+
+body > main.home > section > figure:nth-child(even) > ul {
+  margin-top: -2.5em;
+  position: absolute;
+  right: 12%;
+}
+
+body > main.home > section > figure > ul > li > h3{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1.2em;
+}
+
+body > main.home > section > figure > ul > li  {
+  margin-bottom: 1em;
 }
