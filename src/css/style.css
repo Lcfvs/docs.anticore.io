@@ -147,14 +147,15 @@ body > footer {
 }
 
 body > main.home {
-  height: calc(0vh - 0em);
+  height: auto;
   padding: 0;
+  width: 100%;
 }
 
-body > main.home > * {
+body > main.home > header {
   margin: 0;
   padding: 0;
-  width: 110%;
+  width: 100vw;
 }
 
 body > main.home > header h1,
