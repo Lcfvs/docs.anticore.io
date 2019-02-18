@@ -211,7 +211,7 @@ body > main.home > section > figure {
 body > main.home > section > figure > span {
   background-color: rgba(250, 166, 26, 1);
   border: 1px solid rgba(250, 166, 26, 1);
-  padding: 10em;
+  padding: 5em;
   border-radius: 50%;
 } 
 
