@@ -1,0 +1,76 @@
+html {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(calc(100vh - 3.5em));
+    -ms-scroll-snap-type: mandatory;
+    -ms-scroll-snap-points-y: repeat(calc(100vh - 3.5em));
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 34, 1);
+    background: rgba(245, 245, 255, 1);
+}
+
+body > header,
+body > nav > ol:first-of-type > li {
+    border-bottom: 0.5em solid rgba(250, 166, 26, 1);
+}
+
+body > nav > ol:first-of-type > li {
+    border-bottom-width: 0.063em;
+}
+
+body > header {
+    box-sizing: content-box;
+    border-bottom-width: 0.5em;
+}
+
+body > header > h1 {
+    color: rgba(250, 166, 26, 1);
+}
+
+body > header,
+body > nav > a,
+body > nav > ol:first-of-type {
+    background: rgba(0, 0, 34, 1);
+}
+
+body > nav > ol:first-of-type {
+    margin-top: 0.45em;
+}
+
+body > header > ol > li > a,
+body > nav > a {
+    color: rgba(245, 245, 255, 0.7);
+}
+
+body > header > ol > li > a:not(:focus) ~ a {
+    color: transparent;
+}
+
+body > header > ol > li > a + ol,
+body > header > ol > li > a ~ p {
+    background: rgba(255, 255, 181, 1);
+}
+
+body > header > ol > li > ol > li > a {
+    display: block;
+    height: 100%;
+    padding: 0 0.5em;
+}
+
+body > header > ol > li > a:not(:focus) + ol:not(:empty) ~ a::after {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+body > nav {
+    margin-top: 3.063em;
+}
+
+body > nav > ol:first-of-type a {
+    color: rgba(204, 204, 255, 1);
+}
+
+body > nav > ol:first-of-type a.current {
+    color: rgba(91, 192, 190, 1);
+}
