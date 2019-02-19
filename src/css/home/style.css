@@ -72,7 +72,8 @@ main.home footer p {
 }
 
 main.home section {
-    width: 90%;
+    width: 100%;
+    padding: 1em;
 }
 
 main.home section::before {
@@ -97,12 +98,14 @@ main.home section h1 {
 
 main.home section ol {
     display: block;
+    text-align: justify;
 }
 
 @media only screen and (min-width:50em) {
     main.home section {
-        width: 50%;
-        padding-left: 5.5em;
+        width: auto;
+        margin-left: calc(50vw - 25em);
+        margin-right: calc(50vw - 25em);
     }
 
     main.home section::before {
