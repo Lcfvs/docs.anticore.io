@@ -9,7 +9,7 @@ anticore.io docs sources
 * Install this package **where you want**
   ```shell
   $ project-dir=./project-name
-  $ git clone https://github.com/anticore-project/docs.anticore.git $project-dir
+  $ git clone https://github.com/anticore-project/docs.anticore.io.git $project-dir
   $ cd $project-dir
   $ npm i -D
   $ npm run start
