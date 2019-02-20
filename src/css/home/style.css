@@ -16,16 +16,15 @@ main.home > footer {
 
 main.home > header {
     text-align: center;
-    background-color: rgba(92, 45, 145, 1);
+    background-color: rgba(92, 45, 145, );
     width: 100%;
 }
 
 main.home > header h1,
 main.home > header p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
     font-weight: bold;
     width: 100%;
-    margin-bottom: 5vh;
 }
 
 main.home > header h1 {
@@ -38,9 +37,12 @@ main.home > header p {
 }
 
 main.home > header img {
-    width: 60%;
-    min-width: 20em;
-    opacity: 0.5;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    width: 100%;
+    height: 96%;
+    z-index: -1;
 }
 
 main.home #made-from-javascript::before {

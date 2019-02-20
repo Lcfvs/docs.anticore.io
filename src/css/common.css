@@ -23,10 +23,55 @@ body > nav > ol:first-of-type > li {
 body > header {
     box-sizing: content-box;
     border-bottom-width: 0.5em;
+    height: 5em;
 }
 
 body > header > h1 {
     color: rgba(250, 166, 26, 1);
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 0.75em;
+}
+
+body > nav > a[tabindex] {
+    border-radius: 50%;
+    padding: 0.1%;
+    font-size: 0.75em;
+    margin-left: 1.5%;
+    margin-top: 1.4em;
+}
+
+body > nav > a[tabindex="1"] {
+    color: rgba(250, 166, 26, 1);
+    border: 1px solid rgba(250, 166, 26, 1);
+}
+
+body > nav > a[tabindex="1"]:hover {
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 34, 1);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body > nav > a[tabindex="-1"] {
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 34, 1);
+    border: 1px solid rgba(0, 0, 34, 1);
+}
+
+body > nav > a[tabindex="-1"]:hover {
+    border: 1px solid rgba(250, 166, 26, 1);
+    background-color: rgba(0, 0, 34, 1);
+    color: rgba(250, 166, 26, 1);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body > header > h1 > a {
+    font-size: 1.5em;
+}
+
+body > header > h1 > a:hover  {
+    border-bottom: 2px dashed rgba(250, 166, 26, 1);
+    padding: 0.05em;
 }
 
 body > header,
@@ -36,7 +81,7 @@ body > nav > ol:first-of-type {
 }
 
 body > nav > ol:first-of-type {
-    margin-top: 0.45em;
+    margin-top: 2em;
 }
 
 body > header > ol > li > a,
@@ -68,9 +113,12 @@ body > nav {
 }
 
 body > nav > ol:first-of-type a {
-    color: rgba(204, 204, 255, 1);
+    color: rgba(250, 166, 26, 1);
+    font-weight: bold;
+    text-align: center;
 }
 
 body > nav > ol:first-of-type a.current {
-    color: rgba(91, 192, 190, 1);
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 34, 1);
 }

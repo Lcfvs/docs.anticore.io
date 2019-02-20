@@ -1,5 +1,5 @@
-@import '../../node_modules/@lcf.vs/css-ui/css-ui.min.css';
-@import '../../node_modules/@lcf.vs/css-ui/components/menu/mini/mini.min.css';
+@import '../../node_modules/@lcf.vs/css-ui/css-ui.css';
+@import '../../node_modules/@lcf.vs/css-ui/components/menu/mini/mini.css';
 @import '../../node_modules/@lcf.vs/css-ui/components/header/popdown/popdown.min.css';
 @import './style.css';
 @import './fonts.css';
