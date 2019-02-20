@@ -16,7 +16,7 @@ main.home > footer {
 
 main.home > header {
     text-align: center;
-    background-color: rgba(92, 45, 145, );
+    background-color: rgba(92, 45, 145, 0.5);
     width: 100%;
 }
 
